@@ -333,3 +333,19 @@ select{
         flex-direction:column;
     }
 }
+
+.category-card.active {
+
+    border: 3px solid #2563eb;
+
+    background-color: #eff6ff;
+
+    transform: translateY(-5px);
+}
+
+.action-buttons button.active {
+
+    background-color: #7c3aed;
+
+    font-weight: bold;
+}
