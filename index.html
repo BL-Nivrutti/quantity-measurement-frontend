@@ -8,7 +8,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Quantity Measurement Dashboard</title>
+    <title>
+        Quantity Measurement App
+    </title>
 
     <link rel="stylesheet"
           href="css/style.css">
@@ -17,9 +19,198 @@
 
 <body>
 
-<h1>
-    Quantity Measurement Dashboard
-</h1>
+<div class="container">
+
+    <header>
+
+        <h1>
+            Welcome to Quantity Measurement App
+        </h1>
+
+        <p>
+            Convert, Compare and Perform Arithmetic Operations
+            Across Measurement Units
+        </p>
+
+    </header>
+
+    <div class="dashboard-layout">
+
+        <!-- LEFT SIDE -->
+
+        <div class="left-panel">
+
+            <section class="category-section">
+
+                <h2>Select Category</h2>
+
+                <div class="category-grid">
+
+                    <div class="category-card">
+                        📏
+                        <span>Length</span>
+                    </div>
+
+                    <div class="category-card">
+                        ⚖️
+                        <span>Weight</span>
+                    </div>
+
+                    <div class="category-card">
+                        🌡️
+                        <span>Temperature</span>
+                    </div>
+
+                    <div class="category-card">
+                        🧪
+                        <span>Volume</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="action-section">
+
+                <h2>Select Operation</h2>
+
+                <div class="action-buttons">
+
+                    <button>Compare</button>
+
+                    <button>Convert</button>
+
+                    <button>Add</button>
+
+                    <button>Subtract</button>
+
+                    <button>Divide</button>
+
+                </div>
+
+            </section>
+
+            <section class="measurement-card">
+
+                <h2>Measurement Input</h2>
+
+                <div class="input-grid">
+
+                    <div class="input-group">
+
+                        <label>First Value</label>
+
+                        <input
+                                type="number"
+                                placeholder="Enter Value">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>First Unit</label>
+
+                        <select>
+
+                            <option>
+                                Select Unit
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Second Value</label>
+
+                        <input
+                                type="number"
+                                placeholder="Enter Value">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Second Unit</label>
+
+                        <select>
+
+                            <option>
+                                Select Unit
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <button class="calculate-btn">
+
+                    Calculate
+
+                </button>
+
+            </section>
+
+            <section class="result-card">
+
+                <h2>Result</h2>
+
+                <div id="result">
+
+                    Your Result Will Appear Here
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="right-panel">
+
+            <section class="dashboard-card">
+
+                <h2>Dashboard</h2>
+
+                <div class="info-box">
+
+                    <h4>Total Operations</h4>
+
+                    <span>0</span>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h4>Last Operation</h4>
+
+                    <span>None</span>
+
+                </div>
+
+                <button class="theme-btn">
+
+                    🌙 Dark Mode
+
+                </button>
+
+                <button class="history-btn">
+
+                    📜 Show History
+
+                </button>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
 
 <script src="js/app.js"></script>
 
